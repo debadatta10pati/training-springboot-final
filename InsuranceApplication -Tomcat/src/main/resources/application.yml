@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/training
+    username: root
+    password: Deba2021!
+  
+server:
+  servlet:
+    context-path: /app 
+  port: 8091
+
+

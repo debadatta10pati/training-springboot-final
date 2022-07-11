@@ -1,0 +1,57 @@
+dn: dc=training,dc=com
+objectclass: top
+objectclass: domain
+objectclass: extensibleObject
+dc: training
+
+dn: ou=groups,dc=training,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: groups
+
+dn: ou=people,dc=training,dc=com
+objectclass: top
+objectclass: organizationalUnit
+ou: people
+
+dn: uid=deba,ou=people,dc=training,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Deba
+sn: Pati
+uid: deba
+userPassword: $2a$12$fRhzKuhlyI8IUN6GMHfXCuBs4UHfDYUIcNuvAKtH0ElFruXnIm9wG
+
+dn: uid=lily,ou=people,dc=training,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Lily
+sn: Gonzalez
+uid: lily
+userPassword: $2a$12$qOnEFFuPqcmRgspena55pOJPBLR6qInUOgCKJL21gga5iV/ID7Q1.
+
+dn: uid=tom,ou=people,dc=training,dc=com
+objectclass: top
+objectclass: person
+objectclass: organizationalPerson
+objectclass: inetOrgPerson
+cn: Tom
+sn: Ray
+uid: tom
+userPassword: $2a$12$0ea77Rjo7i49e/A8AIeAe.ij.RQBlod4GQdd0AzzfMok6CBNH6iHW
+
+dn: cn=admin,ou=groups,dc=training,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: admin
+uniqueMember: uid=deba,ou=people,dc=training,dc=com
+
+dn: cn=user,ou=groups,dc=training,dc=com
+objectclass: top
+objectclass: groupOfUniqueNames
+cn: user
+uniqueMember: uid=lily,ou=people,dc=training,dc=com

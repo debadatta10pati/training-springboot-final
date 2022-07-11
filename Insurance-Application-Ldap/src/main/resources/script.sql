@@ -1,0 +1,3 @@
+create table customer (id bigint not null auto_increment, email varchar(255), first_name varchar(255), last_name varchar(255), username varchar(255),maritalstatus varchar(255),insurancetype varchar(255), primary key (id)) engine=MyISAM
+INSERT INTO customer (email, first_name, last_name, username, maritalstatus,insurancetype) values ('tom@gmail.com', 'Tom', 'Ray', 'tom','Married','Home');
+INSERT INTO customer (email, first_name, last_name, username,maritalstatus,insurancetype) values ('lily@gmail.com', 'Lily', 'Gonzalez', 'lily','Single','Car');
